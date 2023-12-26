@@ -1,0 +1,20 @@
+{% extends 'userbase.html' %}
+{% block content %}
+<!-- <div class="MainContainer"> -->
+      
+  <div class="container" style="height: 60vh;">
+             
+        <form method="post">
+          <h5 style="text-align: center;">Run Algorithm</h5>    
+          <select name="algorithm" id="algorithm">
+              <option value="Decision Tree">Decision Tree</option>
+              <option value="Random Forest">Random Forest</option>
+              <option value="Support Vector Machine">Support Vector Machine</option>
+              <option value="NavieBayes">Navie Bayes</option>
+              <option value="Logistic Regression">Logistic Regression</option>
+          </select>
+          <button class="btn btn-outline-secondary" type="submit">Submit</button>
+      </form>
+      </div>
+      <!-- </div> -->
+{% endblock %}

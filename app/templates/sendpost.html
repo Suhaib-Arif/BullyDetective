@@ -1,0 +1,32 @@
+{% extends 'userbase.html' %}
+{% block content %}
+<div class="MainContainer">
+<div class="wrapper">
+    <form method="post" onsubmit="return onValidate(this)" >
+        <h5>Enter Message and Message Type</h5>
+        <br>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Message</label>
+            <div class="col-sm-10">
+                <input type="text" name="message" class="form-control" id="inputEmail3" placeholder="Message">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Type    </label>
+            <div class="col-sm-10">
+                <input type="text" name="messagetype" class="form-control" id="inputEmail3" placeholder="Message Type">
+            </div>
+      </div>
+      
+      <br>
+
+      <button type="submit" class="btn btn-outline-secondary">Submit</button>
+    
+    </form>
+    
+</div>
+</div>
+{% endblock %}
